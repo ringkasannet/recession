@@ -1,0 +1,46 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100vh;
+}
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    position:fixed;
+    top:0px;
+}
+
+.animationContainer{
+    width:"640";
+     height:"500";
+     position: absolute; 
+     background-color:rgba(247, 247, 247, 1.00); 
+}
+
+.header{
+    background-color: #595959;
+    margin:0;
+}
+
+.paraContainer{
+    flex:1;
+    overflow: scroll;
+    padding:10px;
+}
+
+.lastPara{
+    min-height: 100%;
+}
+
+.ringkasanLogo{
+    color:white;
+    font-family: helvetica;
+    font-weight: normal;
+    margin:0;
+    padding:10px;
+    font-size:1em;
+    /* margin:10px; */
+}
