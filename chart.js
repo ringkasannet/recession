@@ -135,6 +135,12 @@ lib.ssMetadata = [];
 
 
 
+(lib.FotoJas3 = function() {
+	this.initialize(img.FotoJas3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,482,640);
+
+
 (lib._05aiAssets = function() {
 	this.initialize(img._05aiAssets);
 }).prototype = p = new cjs.Bitmap();
@@ -144,13 +150,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,736,372);
 (lib.Artwork2aiAssets = function() {
 	this.initialize(img.Artwork2aiAssets);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,33,62);
-
-
-(lib.FotoJas3 = function() {
-	this.initialize(img.FotoJas3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,482,640);// helper functions:
+p.nominalBounds = new cjs.Rectangle(0,0,33,62);// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
@@ -6488,13 +6488,15 @@ p.nominalBounds = new cjs.Rectangle(-141.3,-113.3,659.8,153.2);
 		1. Replace the number 5 in the code below with the frame number you would like the playhead to move to when the symbol instance is clicked.
 		2.Frame numbers in EaselJS start at 0 instead of 1
 		*/
-		
+		/*
 		this.NextBtn.addEventListener("click", fl_ClickToGoToAndPlayFromFrame.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame()
 		{
 			this.play()
 		}
+		
+		*/
 	}
 	this.frame_23 = function() {
 		this.stop()
@@ -7604,9 +7606,9 @@ lib.properties = {
 	color: "#F7F7F7",
 	opacity: 1.00,
 	manifest: [
+		{src:"images/FotoJas3.jpg", id:"FotoJas3"},
 		{src:"images/_05aiAssets.png", id:"_05aiAssets"},
-		{src:"images/Artwork2aiAssets.png", id:"Artwork2aiAssets"},
-		{src:"images/FotoJas3.jpg", id:"FotoJas3"}
+		{src:"images/Artwork2aiAssets.png", id:"Artwork2aiAssets"}
 	],
 	preloads: []
 };

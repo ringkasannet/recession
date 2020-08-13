@@ -5,6 +5,8 @@ html{
 body{
     height:100vh;
 }
+
+p{margin:1vh 0vh;font-family:Helvetica}
 .mainContainer{
     display:flex;
     flex-direction: column;
@@ -28,7 +30,11 @@ body{
 .paraContainer{
     flex:1;
     overflow: scroll;
-    padding:10px;
+}
+
+.para{
+    margin:1vh 2vh 0 1vh;
+    padding: 0 0 0 1vh;
 }
 
 .lastPara{
@@ -41,6 +47,11 @@ body{
     font-weight: normal;
     margin:0;
     padding:10px;
-    font-size:1em;
+    font-size:5vw;
     /* margin:10px; */
+}
+
+.active{
+    border-left:solid #ea5547 1vh;
+    margin:0 2vh 0 0vh;
 }

@@ -10,23 +10,27 @@
         var paraContainer = document.getElementById("para_container")
         var options={
             root:paraContainer,
-            rootMargin:"-10% 0px -90% 0px",
+            rootMargin:"-20% 0px -80% 0px",
             treshold:0
         }
         var observer = new IntersectionObserver(observerCallback, options);
         for (var i = 0; i < paragraphs.length; i++) {
             observer.observe(paragraphs[i])
-
         }
     }
 
     function observerCallback(changes,observer){
         changes.forEach(change=>{
+            console.log(change.target)
             if (change.isIntersecting == true){
+                let actives = document.getElementsByClassName("active")
+                for (var i = 0; i < actives.length; i++) {
+                    actives[i].classList.remove("active")
+                }
                 console.log(change.target.id)
+                change.target.classList.add('active')
                 window.exportRoot.gotoAndPlay('label'+change.target.id)
-
-            }
+            } 
         })
     }
 
